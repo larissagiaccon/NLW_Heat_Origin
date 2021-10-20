@@ -5,75 +5,59 @@
 <head>
   <title>NLW Heat</title>
 
-  <!-- <script src="https://unpkg.com/feather-icons"></script> -->
-
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 
-  <style>
-    html,
-    body {
-      height: 100%;
-    }
+  <link rel="stylesheet" href="style.css" />
 
-    body {
-      display: grid;
-      place-items: center;
-    }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-    svg {
-      margin-right: 0.5rem;
-    }
-
-    h1 {
-      font-size: 4rem;
-    }
-
-    h2 {
-      font-size: 3rem;
-    }
-
-    h3 {
-      font-size: 2rem;
-    }
-
-    a {
-      font-size: 1rem;
-      color: lightgray;
-      text-decoration: none;
-      margin-right: 1rem;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    div {
-      display: flex;
-    }
-  </style>
 </head>
 
 <body>
-  <h1>Larissa Giaccon</h1>
+  <main>
+    <div class="container">
 
-  <h2>Desenvolvedora Front-end</h2>
+      <div class="avatar">
+        <span>
+          <img src="images/build.svg" alt="Selo Rocketseat">
+        </span>
+        <img src="images/photo.jpg" alt="Foto pessoal" class="photo">
+      </div>
 
-  <h3>Engenheira de Computação pela Universidade Tecnológica Federal do Paraná campus Cornélio Procópio</h3>
+      <h1>Larissa Giaccon</h1>
+      <a href="https://www.github.com/larissagiaccon" alt="Github Larissa Giaccon">
+        <img src="images/github.svg" alt="Ícone do Github">
+        larissagiaccon
+      </a>
 
-  <div>
-    <a href="https://www.github.com/larissagiaccon" alt="Github Larissa Giaccon">
-      <i data-feather="github"></i>
-      Github
-    </a>
-    <a href="https://www.linkedin.com/in/larissagiaccon/" alt="Linkedin Larissa Giaccon">
-      <i data-feather="linkedin"></i>
-      Github
-    </a>
-    <a href="https://www.instagram.com/larissagiaccon" alt="Instagram Larissa Giaccon">
-      <i data-feather="instagram"></i>
-      Instagram
-    </a>
-  </div>
+      <p>Engenheira de Computação</p>
+
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/larissagiaccon/" alt="LinkedIn Larissa Giaccon" target="_blank">
+            <i data-feather="linkedin" class="icon" alt="Ícone do LinkedIn"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/larissagiaccon" alt="Instagram Larissa Giaccon" target="_blank">
+            <img src="images/instagram.svg" alt="Ícone do Instagram">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/larissagiaccon" alt="Facebook Larissa Giaccon" target="_blank">
+            <img src="images/facebook.svg" alt="Ícone do Facebook">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com/" alt="Twitter" target="_blank">
+            <img src="images/twitter.svg" alt="Ícone do Twitter">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>
 
   <script>
     feather.replace()
@@ -81,3 +65,4 @@
 </body>
 
 </html>
+
