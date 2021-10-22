@@ -23,16 +23,16 @@
         <span>
           <img src="images/build.svg" alt="Selo Rocketseat">
         </span>
-        <img src="images/photo.jpg" alt="Foto pessoal" class="photo">
+        <img id="userAvatar" src="images/photo.jpg" alt="Foto pessoal" class="photo">
       </div>
 
       <h1 id="userName">Larissa Giaccon</h1>
-      <a href="https://www.github.com/larissagiaccon" alt="Github Larissa Giaccon">
+      <a id="userLink" href="https://www.github.com/larissagiaccon" alt="Github Larissa Giaccon">
         <img src="images/github.svg" alt="Ícone do Github">
-        larissagiaccon
+        <span id="userLogin">larissagiaccon</span>
       </a>
 
-      <p>Engenheira de Computação</p>
+      <p id="userBio">Engenheira de Computação</p>
 
       <ul id="socialLinks">
         <li class="linkedin">
@@ -59,27 +59,7 @@
     </div>
   </main>
 
-  <script>
-    feather.replace()
-
-    const linksSocialMedia = {
-        github: 'larissagiaccon',
-        linkedin: 'in/larissagiaccon',
-        instagram: 'larissagiaccon',
-        facebook: 'larissagiaccon',
-        twitter: ''
-      }
-
-      function changeSocialMediaLinks() {
-        for (let li of socialLinks.children) {
-          const social = li.getAttribute('class')
-          li.children[0].href = `https://www.${social}.com/${linksSocialMedia[social]}`
-          alert(li.children[0].href)
-        }
-      }
-
-      changeSocialMediaLinks()
-  </script>
+  <script src="main.js"></script>
 </body>
 
 </html>
